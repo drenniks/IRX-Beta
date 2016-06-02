@@ -16,7 +16,7 @@ for i in range(len(numbers)):
     plt.legend(loc = 3)
     plt.savefig('/oasis/scratch/comet/drenniks/temp_project/1945/figures/SED_' + str(numbers[i]) + '.png')
     plt.close()
-    
+    '''
     #Plot the 2175 angstrom bump
     data3 = -2.5*np.log(data['flux']/data2['flux'])
     plt.plot(1/data['wave'], data3)
@@ -26,10 +26,10 @@ for i in range(len(numbers)):
     plt.xlabel('1/'+r'$\lambda$ ' + '[1/'+r'$\mu$m'+']')
     plt.ylabel('Attenuation')# + r'$\lambda*F_\lambda$' + ' ' + '(W/m2)')
     plt.legend(loc = 4)
-    plt.savefig('/oasis/scratch/comet/drenniks/temp_project/1945/figures/2175_' + str(numbers[i]) + '.png')
-    plt.close()
+    #plt.savefig('/oasis/scratch/comet/drenniks/temp_project/1945/figures/2175_' + str(numbers[i]) + '.png')
+    #plt.close()
     #difficult to do automatically, since the bump is so small and you need to be able to move in by eye
-
+    '''
 #plt.plot(data['wave'], data['flux'], label = 'Scattered emission')
 #plt.plot(data2['wave'],data2['flux'], label = 'Non-scattered emission')
 #plt.xlabel(r'$\lambda$' + ' ' + r'$\mu$m')
