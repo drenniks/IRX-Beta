@@ -1,6 +1,6 @@
 #!/bin/bash
-#SBATCH --job-name="skirt_images"
-#SBATCH --output="skirt_images.%j.%N.out"
+#SBATCH --job-name="multi_images"
+#SBATCH --output="multi_images.%j.%N.out"
 #SBATCH --partition=compute
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
@@ -14,8 +14,11 @@ module load python
 module load scipy
 cd $SLURM_SUBMIT_DIR
 
-/home/u14266/src/SKIRT/release/SKIRTmain/skirt ~/IRX_Beta/images/single_wave_images_0.ski
+/home/u14266/src/SKIRT/release/SKIRTmain/skirt /oasis/scratch/comet/drenniks/temp_project/IRX/z_0/skirt_images/RGB_wave_images_faceon_0.ski
+/home/u14266/src/SKIRT/release/SKIRTmain/skirt /oasis/scratch/comet/drenniks/temp_project/IRX/z_0/skirt_images/RGB_wave_images_sideon_0.ski
 
-/home/u14266/src/SKIRT/release/SKIRTmain/skirt ~/IRX_Beta/images/multi_wave_images_0.ski
+/home/u14266/src/SKIRT/release/SKIRTmain/skirt /oasis/scratch/comet/drenniks/temp_project/IRX/z_0/skirt_images/IR_wave_images_faceon_0.ski
+/home/u14266/src/SKIRT/release/SKIRTmain/skirt /oasis/scratch/comet/drenniks/temp_project/IRX/z_0/skirt_images/IR_wave_images_sideon_0.ski
+
 
 

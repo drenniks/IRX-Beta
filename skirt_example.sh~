@@ -14,6 +14,6 @@ module load scipy
 cd $SLURM_SUBMIT_DIR
 
 
-/home/u14266/src/SKIRT/release/SKIRTmain/skirt /oasis/scratch/comet/drenniks/temp_project/IRX/z_0/Zubko/Zubko_0.ski
+/home/u14266/src/SKIRT/release/SKIRTmain/skirt /oasis/scratch/comet/drenniks/temp_project/final_IRX/z_0/Zubko/Zubko_0.ski
 
-/home/u14266/src/SKIRT/release/SKIRTmain/skirt /oasis/scratch/comet/drenniks/temp_project/IRX/z_0/no_dust/nodust_0.ski
+/home/u14266/src/SKIRT/release/SKIRTmain/skirt /oasis/scratch/comet/drenniks/temp_project/final_IRX/z_0/nodust/nodust_0.ski

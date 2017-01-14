@@ -1,6 +1,6 @@
 #!/bin/bash
-#SBATCH --job-name="skirt_images"
-#SBATCH --output="skirt_images.%j.%N.out"
+#SBATCH --job-name="halo_prop"
+#SBATCH --output="halo_prop.%j.%N.out"
 #SBATCH --partition=compute
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
@@ -9,13 +9,9 @@
 #SBATCH --mail-type=END,FAIL
 #SBATCH --mail-user=daniellerenniks@gmail.com
 
-
 module load python
 module load scipy
 cd $SLURM_SUBMIT_DIR
 
-/home/u14266/src/SKIRT/release/SKIRTmain/skirt ~/IRX_Beta/images/single_wave_images_0.ski
 
-/home/u14266/src/SKIRT/release/SKIRTmain/skirt ~/IRX_Beta/images/multi_wave_images_0.ski
-
-
+srun python halo_prop.py
